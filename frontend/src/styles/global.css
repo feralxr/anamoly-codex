@@ -1,0 +1,46 @@
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  font-family: "Courier New", "Lucida Console", monospace;
+  background: #000;
+  color: #f2eddc;
+}
+
+.terminal-font {
+  font-family: "Courier New", monospace;
+  letter-spacing: 0.05em;
+}
+
+.btn-terminal {
+  border: 1px solid #7f1d1d;
+  color: #f2eddc;
+  padding: 0.4rem 0.75rem;
+  background: #090909;
+}
+
+.btn-terminal:hover {
+  box-shadow: 0 0 15px rgba(127, 29, 29, 0.9);
+}
+
+.glitch {
+  position: relative;
+  animation: flicker 2.2s infinite;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+@keyframes flicker {
+  0%, 98%, 100% { transform: translate(0,0); filter: none; }
+  49% { transform: translate(1px, -1px); filter: hue-rotate(12deg); }
+  50% { transform: translate(-1px, 1px); }
+  51% { filter: blur(0.4px); }
+}
