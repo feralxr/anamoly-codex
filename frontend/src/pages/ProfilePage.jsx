@@ -25,9 +25,9 @@ export default function ProfilePage() {
           </thead>
           <tbody>
             {rows.map((r) => (
-              <tr key={r.id || r._id}>
-                <td>{r.game_name || r.gameName}</td><td>{new Date(r.session_start || r.sessionStart).toLocaleString()}</td><td>{new Date(r.session_end || r.sessionEnd).toLocaleString()}</td>
-                <td>{r.survival_seconds || r.survivalSeconds}s</td><td>{r.final_score || r.finalScore}</td><td>{r.cause_of_death || r.causeOfDeath}</td><td>{r.anomalies_faced || r.anomaliesFaced}</td><td>{r.anomalies_survived || r.anomaliesSurvived}</td>
+              <tr key={r.id}>
+                <td>{r.game_name}</td><td>{new Date(r.session_start).toLocaleString()}</td><td>{new Date(r.session_end).toLocaleString()}</td>
+                <td>{r.survival_seconds}s</td><td>{r.final_score}</td><td>{r.cause_of_death}</td><td>{r.anomalies_faced}</td><td>{r.anomalies_survived}</td>
               </tr>
             ))}
           </tbody>

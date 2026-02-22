@@ -93,12 +93,12 @@ export default function GameFlowPage() {
         {phase === 'end' && result && (
           <section className="space-y-2 border border-red-900 p-8 bg-black">
             <h2 className="text-red-400 text-3xl glitch">SESSION TERMINATED</h2>
-            <p>Cause of Death: {result.cause_of_death || result.causeOfDeath}</p>
-            <p>Total Survival: {result.survival_seconds || result.survivalSeconds}s</p>
-            <p>Anomalies Faced: {result.anomalies_faced || result.anomaliesFaced}</p>
-            <p>Anomalies Survived: {result.anomalies_survived || result.anomaliesSurvived}</p>
-            <p>Sanity Remaining: {result.sanity_remaining || result.sanityRemaining}%</p>
-            <p className="text-lime-200">Final Score: {result.final_score || result.finalScore}</p>
+            <p>Cause of Death: {result.cause_of_death}</p>
+            <p>Total Survival: {result.survival_seconds}s</p>
+            <p>Anomalies Faced: {result.anomalies_faced}</p>
+            <p>Anomalies Survived: {result.anomalies_survived}</p>
+            <p>Sanity Remaining: {result.sanity_remaining}%</p>
+            <p className="text-lime-200">Final Score: {result.final_score}</p>
             <div className="flex justify-center gap-3">
               <button className="btn-terminal" onClick={() => window.location.reload()}>TRY AGAIN</button>
               <button className="btn-terminal" onClick={() => navigate('/')}>RETURN HOME</button>
