@@ -4,7 +4,7 @@ Monorepo scaffold for a horror-themed anomaly survival platform.
 
 ## Structure
 - `frontend/` React + Vite app with terminal-horror UX, auth, game flow screens, leaderboard and devlog feed.
-- `backend/` Express + PostgreSQL API with JWT auth, session logging, leaderboards, and admin devlog posting.
+- `backend/` Express + postgreSQL API with JWT auth, session logging, leaderboards, and admin devlog posting.
 
 ## Backend setup
 ```bash
