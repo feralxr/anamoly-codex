@@ -14,7 +14,7 @@ cp .env.example .env
 npm run dev
 ```
 
-### Backend `.env` keys
+### backend `.env` keys
 - `PORT=4000`
 - `DATABASE_URL=postgresql://user:password@localhost:5432/anomaly`
 - `JWT_SECRET=change-me`
